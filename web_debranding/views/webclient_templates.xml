@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Replace "Powered by Odoo" on login page footer -->
-    <template id="debranding_login" inherit_id="web.login" name="Debranding Login">
+    <!-- Replace "Powered by Odoo" in login layout footer -->
+    <template id="debranding_login_layout" inherit_id="web.login_layout" name="Debranding Login Layout">
         <xpath expr="//a[contains(@href, 'www.odoo.com')]" position="replace">
             <a href="https://github.com/OCA/OCB" target="_blank">Powered by <span>Odoo open-source platform</span></a>
         </xpath>
