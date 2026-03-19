@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Replace "Powered by Odoo" on login page -->
+    <!-- Replace "Powered by Odoo" on login page footer -->
     <template id="debranding_login" inherit_id="web.login" name="Debranding Login">
-        <xpath expr="//a[contains(@href, 'odoo.com')]" position="replace">
-            <a href="https://github.com/OCA/OCB" target="_blank">Powered by Odoo open-source platform</a>
+        <xpath expr="//a[@href='https://www.odoo.com?utm_source=db&amp;utm_medium=auth']" position="replace">
+            <a href="https://github.com/OCA/OCB" target="_blank">Powered by <span>Odoo open-source platform</span></a>
+        </xpath>
+    </template>
+
+    <!-- Replace brand promotion message -->
+    <template id="debranding_brand_promotion" inherit_id="web.brand_promotion" name="Debranding Brand Promotion">
+        <xpath expr="//a[@href='https://www.odoo.com?utm_source=db&amp;utm_medium=auth']" position="replace">
+            <a href="https://github.com/OCA/OCB" target="_blank">Powered by <span>Odoo open-source platform</span></a>
         </xpath>
     </template>
 </odoo>
