@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl)
 {
     "name": "Web Debranding",
-    "version": "16.0.1.0.0",
+    "version": "19.0.1.0.0",
     "summary": "Replace Odoo branding with OCA OCB references",
     "description": "Changes 'Powered by Odoo' to 'Powered by Odoo open-source platform' with link to OCA OCB.",
     "author": "bring.out doo Sarajevo",
